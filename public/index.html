@@ -1,115 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Erik Vigorito — Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f5f5f5;
-    }
-    header {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      color: #aaa;
-    }
-    header a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    header a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      background: #fff;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid #1a1a1a;
-      padding-bottom: 0.5rem;
-    }
-    .timeline {
-      list-style: none;
-    }
-    .timeline li {
-      margin-bottom: 2rem;
-      padding-left: 1rem;
-      border-left: 3px solid #1a1a1a;
-    }
-    .timeline li:last-child {
-      margin-bottom: 0;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #666;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 3rem 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; font-weight: 700; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1rem; color: #f0f0f0; }
+    .hero .contact-info { font-size: 0.95rem; margin-bottom: 1rem; }
+    .hero a { color: #fff; text-decoration: none; font-weight: 500; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 2px; transition: border-color 0.3s; }
+    .hero a:hover { border-color: #fff; }
+    header { background: #1a1a1a; color: #fff; padding: 1.5rem 2rem; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { color: #aaa; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { background: #fff; margin-bottom: 2rem; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .section-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.5rem; }
+    .section-title h2 { font-size: 1.5rem; }
+    .muted { color: #666; font-size: 0.9rem; }
+    .card { background: #fafafa; padding: 1.5rem; border-left: 4px solid #1a1a1a; margin-bottom: 1.5rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card small { display: block; margin-bottom: 0.75rem; color: #666; }
+    .card p { margin-bottom: 0.75rem; }
+    .card ul { margin-left: 1.5rem; }
+    .card ul li { margin-bottom: 0.25rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; }
+    .pill { background: #e0e0e0; padding: 0.5rem 1rem; border-radius: 20px; text-align: center; font-size: 0.9rem; }
+    .certs { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .cert { background: #e8f4f8; padding: 1rem; border-radius: 6px; text-align: center; font-weight: 500; }
+    .cert a { color: #0066cc; text-decoration: none; }
+    .cert a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; color: #666; }
   </style>
 </head>
 <body>
   <!-- Hero Intro Section -->
+  <div class="hero">
+    <h1>Erik Vigorito</h1>
+    <p>Operations Leader | IT Systems Specialist | Process Optimizer</p>
+    <div class="contact-info">
+      Email: erikvigorito@gmail.com | Phone: (321) 246-2253
+    </div>
+    <a href="https://www.linkedin.com/in/erik-vigorito" target="_blank">LinkedIn Profile</a>
+  </div>
+
   <header>
     <h1>Erik Vigorito</h1>
     <p>Operations Leader | IT Systems Specialist | Process Optimizer</p>
-    <p>Email: erikvigorito@gmail.com | Phone: (321) 246-2253</p>
-    <p><a href="https://www.linkedin.com/in/erik-vigorito" target="_blank">LinkedIn Profile</a></p>
   </header>
-
   <main>
-    <section id="experience">
-      <div class="section-title">Professional Experience</div>
-      <ul class="timeline">
-        <li>
-          <strong>Office Manager (part-time), IT</strong><br>
-          The Retreat, Orlando, FL<br>
-          <em>Dec 2024 – Present</em><br>
-          - Aligned IT service delivery with business objectives, boosting productivity.<br>
-          - Introduced cost optimization strategies.<br>
-          - Implemented technology upgrades, increasing collaboration and service speed.<br>
-          - Optimized vendor contracts; cut processing time by 25%.
-        </li>
-        <li>
-          <strong>Logistics & Operations Specialist</strong><br>
-          Mobile Logistics Services, South Central FL<br>
-          <em>Nov 2017 – Jan 2025</em><br>
-          - Managed logistics coordination across 17,000 delivery sites.<br>
-          - Delivered white-glove support, driving 15% customer satisfaction increase.<br>
-          - Reduced delivery times by 15%.<br>
-          - Authored/enforced SOPs, optimized dispatch by 20%.<br>
-          - Liaison among customers, vendors, and internal teams.
-        </li>
-      </ul>
+    <section id="about">
+      <div class="section-title"><h2>About Me</h2><span class="muted">Overview</span></div>
+      <p>I bring hands-on operational leadership from fast-paced retail and food-service environments, combined with a growing technical skillset in IT administration, SaaS platforms, and process automation. I thrive on solving problems, building efficient systems, and empowering teams to deliver exceptional results.</p>
     </section>
+    <section id="experience">
+      <div class="section-title"><h2>Professional Experience</h2><span class="muted">Selected roles</span></div>
+      <div class="event">
+        <div class="card">
+          <h3>Store Manager — Starbucks</h3>
+          <small>Dates per resume • P&L Ownership</small>
+          <p>Led store operations, team hiring and training, inventory, safety, and guest experience with full P&L accountability.</p>
+          <ul class="muted">
+            <li>Drove top-line growth through merchandising and service standards.</li>
+            <li>Improved shrink and waste with tighter counts and cycle checks.</li>
+            <li>Coached shift leaders on KPIs, labor optimization, and incident response.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="event">
+        <div class="card">
+          <h3>General Manager — RaceTrac</h3>
+          <small>Dates per resume • High-volume operations</small>
+          <p>Managed a high-velocity convenience and food-service operation; built a strong safety culture and developed emerging leaders.</p>
+          <ul class="muted">
+            <li>Owned staffing, scheduling, and training programs; reduced turnover.</li>
+            <li>Maintained food safety audits and compliance; improved inspection scores.</li>
+            <li>Introduced simple automations for ordering and shift checklists.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="section-title"><h2>Skills & Core Competencies</h2><span class="muted">From the resume</span></div>
+      <div class="grid">
+        <div class="pill">Leadership & People Management</div>
+        <div class="pill">Operations Management</div>
+        <div class="pill">Business Strategy & P&L</div>
+        <div class="pill">Customer/Guest Experience</div>
+        <div class="pill">Logistics & Scheduling</div>
+        <div class="pill">Inventory & Merchandising</div>
+        <div class="pill">Food Safety & Compliance</div>
+        <div class="pill">Incident Response & Safety</div>
+        <div class="pill">Process Improvement</div>
+        <div class="pill">Process Automation</div>
+        <div class="pill">IT & SaaS Administration</div>
+        <div class="pill">Access Management</div>
+      </div>
+    </section>
+    <section id="certs">
+      <div class="section-title"><h2>Certifications</h2></div>
+      <div class="certs">
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/68d30d09573da69d8c33ba333507e99b47735392ec2ac53e53d98c783ccd333c" target="_blank">Brainstorming Tools</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/70b3bda08efb2fd256e090ca45c0f3039a8d6ea417bfdd900cb9a2f24c56f23f" target="_blank">Digital Body Language</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f26db445320f675a5d466ed9eeee43409e2f2bd16222de9c5eba97776239b004" target="_blank">Leading Virtual Meetings</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a17d4eeb6a1441a16eaca72e6e6571f9e249d3011ce427e37abdf03add7a18f5" target="_blank">Learning HubSpot CRM</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/728fc339d6fe44a81c4f9870a0f470c2f48deaaf0a71097a35f47444fb3f3a27" target="_blank">Microsoft Azure AI Fundamentals (AI-900)</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/fbba230180f471bbf124cdc38c3fee9392d40250293c9350a7a8c30ff9d79b42" target="_blank">Microsoft Collaboration: SharePoint, Teams, Groups, Yammer</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a96b2e29ca2a1c87bcae751ae07f94b13ebab61e449b8bf1739e9e194f68f0f4" target="_blank">Python Object-Oriented Programming</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b39b315e0fd2a7e9d042719edd6a8d99eb612c08c9c9bb64c0fcc1efdf3f96e8" target="_blank">TensorFlow 2.0: Working with Images</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b2c8099fc51b3e0d033e93a51191e7a3eee58a0b8d70048040bfafee5cada92c" target="_blank">Time Management: Working from Home</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/c6bf914df83dcb4f3d9cb7d0d6452a1f7c89ae7a2e11a1165bb52df30796e182" target="_blank">Agile Project Management with Jira Cloud</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/e6681ec759855ffafb5dde331da5f143344561aa4268870f19746fb0c6b5723d?trk=share_certificate" target="_blank">Excel Essential Training (Microsoft 365)</a></div>
+        <div class="cert"><a href="https://lnkd.in/gMxc2fRd" target="_blank">Hands-On Data Annotation: Applied Machine Learning</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/4fa6bba14d9dd90898422e211415c66fca83c4bf27371bb840e8bc7912a5a417" target="_blank">Python Essential Training</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f9cbd97d638204f6c19ee1ba12216d066c5359b09e5f9819ded8c1e2fc28d965?trk=share_certificate" target="_blank">Remote Work Foundations</a></div>
+        <div class="cert"><a href="https://www.credly.com/users/erik-vigorito" target="_blank">Artificial Intelligence Fundamentals (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/7868e118e4469653d9b8b9a38b54bd0e1cb38b747b816a720a17e5b2fcf49a67" target="_blank">Automate Your Workflows with Generative AI</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/1b444ca8-8c58-4780-8c7f-7dd090ab32c8/linked_in_profile" target="_blank">Big Data Foundations - Level 1 (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/4fc6e539-8845-40e4-b7b2-8b3e53e9bd5a/linked_in_profile" target="_blank">Hadoop Foundations - Level 1 (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/574eb7f8-f2fc-4648-a606-1d1a4d1f1747/linked_in_profile" target="_blank">Project Management Fundamentals (IBM, SkillsBuild)</a></div>
+        <div class="cert">CompTIA A+</div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="section-title"><h2>Education</h2><span class="muted">Per resume</span></div>
+      <div class="card" style="padding:16px">
+        <p class="muted">Education details remain as listed on the resume.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-title"><h2>Contact</h2><span class="muted">Let's connect</span></div>
+      <div class="card" style="padding:16px">
+        <p>Email: <a href="mailto:erik.vigorito@gmail.com">erik.vigorito@gmail.com</a>
+        • LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" rel="noopener" target="_blank">erik-j-v</a></p>
+      </div>
+    </section>
+    <footer>
+      Built with ❤️ • Deployed via Perplexity
+    </footer>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Erik Vigorito. All rights reserved.</p>
-  </footer>
 </body>
 </html>
