@@ -1,182 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Erik Vigorito | Operations, IT, and Leadership</title>
-  <meta name="description" content="Resume-backed portfolio for Erik Vigorito: leadership, operations, logistics, IT, and service excellence." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erik Vigorito — Portfolio</title>
   <style>
-    :root{
-      --bg:#0b1020; --panel:#111733; --accent:#6ccff6; --accent-2:#9b8cff; --text:#e8ecf1; --muted:#9aa4b2; --ok:#22c55e; --warn:#f59e0b;
-      --border:rgba(255,255,255,.08);
-      --shadow:0 10px 30px rgba(0,0,0,.35), 0 2px 10px rgba(0,0,0,.25);
-      --radius:14px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(108,207,246,.08), transparent), radial-gradient(800px 400px at -10% 0, rgba(155,140,255,.08), transparent), var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:var(--accent)}
-    .container{max-width:1100px;margin:auto;padding:28px}
-    header.site{position:sticky;top:0;background:rgba(11,16,32,.6);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--border);z-index:10}
-    header.site .wrap{display:flex;align-items:center;gap:16px;justify-content:space-between}
-    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-    .logo .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
-    nav a:hover{color:var(--text)}
-
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:38px 0}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .hero .primary{padding:36px}
-    .tag{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(108,207,246,.15);border:1px solid rgba(108,207,246,.35);color:#d9f2ff;font-weight:600;font-size:12px}
-    h1{margin:14px 0 10px;font-size:40px;line-height:1.1}
-    .sub{color:var(--muted);font-size:16px;line-height:1.6}
-    .quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-    .quick .chip{padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.03);color:var(--muted);font-weight:600;font-size:12px}
-    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn{padding:12px 16px;border-radius:10px;border:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.08), rgba(255,255,255,.02));color:var(--text);text-decoration:none;font-weight:700}
-    .btn.primary{background:linear-gradient(180deg,rgba(108,207,246,.35), rgba(108,207,246,.15));border-color:rgba(108,207,246,.55);color:#041824}
-    .hero aside{padding:0}
-    .aside .stat{padding:16px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
-    .dotline{width:10px;height:10px;border-radius:999px;background:var(--ok)}
-    .aside ul{list-style:none;margin:0;padding:0}
-    .aside li{padding:16px 18px;border-bottom:1px dotted var(--border);color:var(--muted);display:flex;align-items:flex-start;gap:10px}
-
-    /* Sections */
-    section{margin:42px 0}
-    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-    .section-title h2{margin:0;font-size:22px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .pill{padding:14px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.03);font-weight:600;color:#dbe6f6}
-    .muted{color:var(--muted)}
-
-    /* Timeline */
-    .timeline{position:relative;border-left:2px solid var(--border);margin-left:12px;padding-left:18px}
-    .event{margin:18px 0}
-    .event .card{padding:16px}
-    .event h3{margin:0 0 6px}
-    .event small{color:var(--muted)}
-
-    /* Certs wall */
-    .certs{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
-    .cert{padding:12px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.03);text-align:center;font-weight:600;color:#e6f3ff}
-
-    footer{margin:48px 0 12px;color:var(--muted);font-size:14px;text-align:center}
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr}
-      .grid{grid-template-columns:repeat(2,1fr)}
-      .certs{grid-template-columns:repeat(3,1fr)}
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+    header { background: #1a1a1a; color: #fff; padding: 1.5rem 2rem; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { color: #aaa; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { background: #fff; margin-bottom: 2rem; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .section-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.5rem; }
+    .section-title h2 { font-size: 1.5rem; }
+    .muted { color: #666; font-size: 0.9rem; }
+    .card { background: #fafafa; padding: 1.5rem; border-left: 4px solid #1a1a1a; margin-bottom: 1.5rem; }
+    .card:last-child { margin-bottom: 0; }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card small { display: block; margin-bottom: 0.75rem; color: #666; }
+    .card p { margin-bottom: 0.75rem; }
+    .card ul { margin-left: 1.5rem; }
+    .card ul li { margin-bottom: 0.25rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; }
+    .pill { background: #e0e0e0; padding: 0.5rem 1rem; border-radius: 20px; text-align: center; font-size: 0.9rem; }
+    .certs { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .cert { background: #e8f4f8; padding: 1rem; border-radius: 6px; text-align: center; font-weight: 500; }
+    .cert a { color: #0066cc; text-decoration: none; }
+    .cert a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 2rem; color: #666; }
   </style>
 </head>
 <body>
-  <header class="site">
-    <div class="container wrap">
-      <div class="logo"><span class="dot"></span> <span>Erik Vigorito</span></div>
-      <nav>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certs">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Erik Vigorito</h1>
+    <p>Operations Leader | IT Systems Specialist | Process Optimizer</p>
   </header>
-
-  <main class="container">
-    <section class="hero">
-      <div class="primary card">
-        <span class="tag">Operations • IT • Remote Leadership</span>
-        <h1>Reliable operator and people-first leader for high-velocity teams</h1>
-        <p class="sub">Personal brand: I lead with integrity, calm under pressure, and a bias for action—simplifying complexity, coaching teams, and building resilient operations that scale. Objective: Leverage multi-site leadership and hands-on IT/operations experience to drive safety, service, and profitability while automating routine work and enabling teams to do their best work.</p>
-        <div class="quick">
-          <span class="chip">Leadership & Coaching</span>
-          <span class="chip">P&amp;L Ownership</span>
-          <span class="chip">Logistics & Scheduling</span>
-          <span class="chip">Service Excellence</span>
-          <span class="chip">IT & SaaS Admin</span>
-          <span class="chip">Process Automation</span>
-          <span class="chip">Safety & Food Safety</span>
-        </div>
-        <div class="cta">
-          <a class="btn primary" href="#contact">Contact</a>
-          <a class="btn" href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener">LinkedIn Profile</a>
-          <a class="btn" href="/public/Resume/Erik_Vigorito_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-        </div>
-      </div>
-      <aside class="aside card">
-        <div class="stat"><span class="dotline"></span><strong>Remote-ready</strong><span class="muted"> • EST • Flexible hours</span></div>
-        <ul>
-          <li>Operational playbooks, clear SLAs, and structured communications.</li>
-          <li>Onboarding/offboarding checklists and automation-first mindset.</li>
-          <li>Compliance, safety, scheduling, and secure access.</li>
-          <li>Calm, empathetic leadership that meets people where they are.</li>
-        </ul>
-      </aside>
+  <main>
+    <section id="about">
+      <div class="section-title"><h2>About Me</h2><span class="muted">Overview</span></div>
+      <p>I bring hands-on operational leadership from fast-paced retail and food-service environments, combined with a growing technical skillset in IT administration, SaaS platforms, and process automation. I thrive on solving problems, building efficient systems, and empowering teams to deliver exceptional results.</p>
     </section>
-
     <section id="experience">
-      <div class="section-title"><h2>Work Experience</h2><span class="muted">Selected roles</span></div>
-      <div class="timeline">
-        <div class="event">
-          <div class="card">
-            <h3>Office Manager — The Retreat</h3>
-            <small>Dates per resume • Location</small>
-            <p>Directed front-office operations, scheduling, vendor coordination, and record-keeping. Implemented process improvements that improved service responsiveness and reduced administrative backlog.</p>
-            <ul class="muted">
-              <li>Owned calendars, intake, and communications; standardized templates and SOPs.</li>
-              <li>Introduced basic IT hygiene: shared drives, permissions, and access lists.</li>
-              <li>Improved vendor turnaround by implementing status tracking and weekly reviews.</li>
-            </ul>
-          </div>
+      <div class="section-title"><h2>Professional Experience</h2><span class="muted">Selected roles</span></div>
+      <div class="event">
+        <div class="card">
+          <h3>Store Manager — Starbucks</h3>
+          <small>Dates per resume • P&L Ownership</small>
+          <p>Led store operations, team hiring and training, inventory, safety, and guest experience with full P&L accountability.</p>
+          <ul class="muted">
+            <li>Drove top-line growth through merchandising and service standards.</li>
+            <li>Improved shrink and waste with tighter counts and cycle checks.</li>
+            <li>Coached shift leaders on KPIs, labor optimization, and incident response.</li>
+          </ul>
         </div>
-        <div class="event">
-          <div class="card">
-            <h3>Logistics Specialist — Mobile Logistics</h3>
-            <small>Dates per resume • Multi-site</small>
-            <p>Coordinated delivery routes, inventory handoffs, and driver communications to hit service windows with safety and accuracy.</p>
-            <ul class="muted">
-              <li>Optimized routes and load sequencing; reduced missed windows and rework.</li>
-              <li>Implemented checklist-based dispatch and close-out for accountability.</li>
-              <li>Maintained equipment and safety compliance documentation.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="event">
-          <div class="card">
-            <h3>General Manager — Shell</h3>
-            <small>Dates per resume • P&amp;L Ownership</small>
-            <p>Led store operations, team hiring and training, inventory, safety, and guest experience with full P&amp;L accountability.</p>
-            <ul class="muted">
-              <li>Drove top-line growth through merchandising and service standards.</li>
-              <li>Improved shrink and waste with tighter counts and cycle checks.</li>
-              <li>Coached shift leaders on KPIs, labor optimization, and incident response.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="event">
-          <div class="card">
-            <h3>General Manager — RaceTrac</h3>
-            <small>Dates per resume • High-volume operations</small>
-            <p>Managed a high-velocity convenience and food-service operation; built a strong safety culture and developed emerging leaders.</p>
-            <ul class="muted">
-              <li>Owned staffing, scheduling, and training programs; reduced turnover.</li>
-              <li>Maintained food safety audits and compliance; improved inspection scores.</li>
-              <li>Introduced simple automations for ordering and shift checklists.</li>
-            </ul>
-          </div>
+      </div>
+      <div class="event">
+        <div class="card">
+          <h3>General Manager — RaceTrac</h3>
+          <small>Dates per resume • High-volume operations</small>
+          <p>Managed a high-velocity convenience and food-service operation; built a strong safety culture and developed emerging leaders.</p>
+          <ul class="muted">
+            <li>Owned staffing, scheduling, and training programs; reduced turnover.</li>
+            <li>Maintained food safety audits and compliance; improved inspection scores.</li>
+            <li>Introduced simple automations for ordering and shift checklists.</li>
+          </ul>
         </div>
       </div>
     </section>
-
     <section id="skills">
       <div class="section-title"><h2>Skills & Core Competencies</h2><span class="muted">From the resume</span></div>
       <div class="grid">
         <div class="pill">Leadership & People Management</div>
         <div class="pill">Operations Management</div>
-        <div class="pill">Business Strategy & P&amp;L</div>
+        <div class="pill">Business Strategy & P&L</div>
         <div class="pill">Customer/Guest Experience</div>
         <div class="pill">Logistics & Scheduling</div>
         <div class="pill">Inventory & Merchandising</div>
@@ -188,33 +85,30 @@
         <div class="pill">Access Management</div>
       </div>
     </section>
-
     <section id="certs">
       <div class="section-title"><h2>Certifications</h2><span class="muted">Wall</span></div>
       <div class="certs">
-        <div class="cert">ServSafe Food Protection Manager</div>
-        <div class="cert">OSHA 10</div>
-        <div class="cert">First Aid / CPR</div>
-        <div class="cert">ITIL Foundations (in progress)</div>
-        <div class="cert">Microsoft 365 Fundamentals (in progress)</div>
-        <div class="cert">Google Workspace Admin (in progress)</div>
+        <div class="cert"><a href="https://www.servsafe.com/" target="_blank" rel="noopener">ServSafe Food Protection Manager</a></div>
+        <div class="cert"><a href="https://www.osha.gov/training" target="_blank" rel="noopener">OSHA 10</a></div>
+        <div class="cert"><a href="https://www.redcross.org/take-a-class" target="_blank" rel="noopener">First Aid / CPR</a></div>
+        <div class="cert"><a href="https://www.axelos.com/certifications/itil-service-management/itil-4-foundation" target="_blank" rel="noopener">ITIL Foundations (in progress)</a></div>
+        <div class="cert"><a href="https://learn.microsoft.com/en-us/certifications/microsoft-365-fundamentals/" target="_blank" rel="noopener">Microsoft 365 Fundamentals (in progress)</a></div>
+        <div class="cert"><a href="https://support.google.com/a/answer/1047213" target="_blank" rel="noopener">Google Workspace Admin (in progress)</a></div>
       </div>
     </section>
-
     <section id="education">
       <div class="section-title"><h2>Education</h2><span class="muted">Per resume</span></div>
       <div class="card" style="padding:16px">
         <p class="muted">Education details remain as listed on the resume.</p>
       </div>
     </section>
-
     <section id="contact">
-      <div class="section-title"><h2>Contact</h2><span class="muted">Let’s connect</span></div>
+      <div class="section-title"><h2>Contact</h2><span class="muted">Let's connect</span></div>
       <div class="card" style="padding:16px">
-        <p>Email: <a href="mailto:erik.vigorito@gmail.com">erik.vigorito@gmail.com</a> • LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener">erik-j-v</a></p>
+        <p>Email: <a href="mailto:erik.vigorito@gmail.com">erik.vigorito@gmail.com</a>
+        • LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener">erik-j-v</a></p>
       </div>
     </section>
-
     <footer>
       <p>Built with ❤️ • Deployed via Perplexity</p>
     </footer>
