@@ -1,1 +1,207 @@
-<html><body><h1>Portfolio</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erik Vigorito | IT / Remote Operations</title>
+  <meta name="description" content="Modern one-page portfolio for Erik Vigorito – IT and Remote Operations professional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#111733; --accent:#6ccff6; --accent-2:#9b8cff; --text:#e8ecf1; --muted:#9aa4b2; --ok:#22c55e; --warn:#f59e0b;
+      --border:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(0,0,0,.35), 0 2px 10px rgba(0,0,0,.25);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,rgba(108,207,246,.08),transparent),radial-gradient(800px 400px at -10% 0,rgba(155,140,255,.08),transparent),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+    a{color:var(--accent)}
+    .container{max-width:1100px;margin:auto;padding:28px}
+    header.site{position:sticky;top:0;background:rgba(11,16,32,.6);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--border);z-index:10}
+    header.site .wrap{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .logo .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--text)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:38px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero .primary{padding:36px}
+    .tag{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(108,207,246,.15);border:1px solid rgba(108,207,246,.35);color:#d9f2ff;font-weight:600;font-size:12px}
+    h1{margin:14px 0 10px;font-size:40px;line-height:1.1}
+    .sub{color:var(--muted);font-size:16px;line-height:1.6}
+    .quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .quick .chip{padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:rgba(255,255,255,.03);color:var(--muted);font-weight:600;font-size:12px}
+    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:10px;border:1px solid var(--border);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));color:var(--text);text-decoration:none;font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,rgba(108,207,246,.35),rgba(108,207,246,.15));border-color:rgba(108,207,246,.55);color:#041824}
+
+    .hero .aside{padding:0}
+    .aside .stat{padding:16px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+    .dotline{width:10px;height:10px;border-radius:999px;background:var(--ok)}
+    .aside ul{list-style:none;margin:0;padding:0}
+    .aside li{padding:16px 18px;border-bottom:1px dotted var(--border);color:var(--muted);display:flex;align-items:flex-start;gap:10px}
+
+    /* Skills */
+    section{margin:42px 0}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .section-title h2{margin:0;font-size:22px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .pill{padding:14px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.03);font-weight:600;color:#dbe6f6}
+    .muted{color:var(--muted)}
+
+    /* Timeline */
+    .timeline{display:grid;grid-template-columns:24px 1fr;gap:16px}
+    .timeline .vline{background:linear-gradient(var(--accent),transparent);width:4px;border-radius:4px;margin-left:10px}
+    .timeline .event{padding-bottom:18px}
+    .event .card{padding:16px}
+    .event h3{margin:0 0 4px;font-size:18px}
+
+    /* Certifications */
+    .certs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .cert{padding:14px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.03)}
+    .cert small{display:block;color:var(--muted)}
+
+    /* Footer */
+    footer{margin-top:48px;padding:26px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .certs{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="container wrap">
+      <div class="logo"><span class="dot"></span><span>Erik Vigorito</span></div>
+      <nav>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Development</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="primary card">
+        <span class="tag">IT • Remote Operations • Support</span>
+        <h1>Reliable IT and Remote Ops Partner for Modern Teams</h1>
+        <p class="sub">I'm Erik Vigorito, an IT/Remote Operations professional focused on dependable support, secure access, and smooth collaboration for distributed teams. I build simple, resilient workflows and keep people productive.</p>
+        <div class="quick">
+          <span class="chip">Service Desk</span>
+          <span class="chip">Endpoint Management</span>
+          <span class="chip">SaaS Admin</span>
+          <span class="chip">ITIL-minded</span>
+          <span class="chip">Security-first</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Contact</a>
+          <a class="btn" href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener">LinkedIn Profile</a>
+        </div>
+      </div>
+      <aside class="aside card">
+        <div class="stat"><span class="dotline"></span><strong>Remote-ready</strong><span class="muted"> • EST • Flexible hours</span></div>
+        <ul>
+          <li>Ticketing and triage with clear SLAs and structured comms.</li>
+          <li>Onboarding/offboarding checklists and automation-first mindset.</li>
+          <li>Device compliance, patching cadence, and secure access.</li>
+          <li>Calm, empathetic support that meets people where they are.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">
+        <h2>Core Skills</h2>
+        <span class="muted">Confident, pragmatic, and user-focused</span>
+      </div>
+      <div class="grid">
+        <div class="pill">Microsoft 365 Admin</div>
+        <div class="pill">Google Workspace</div>
+        <div class="pill">Okta / SSO</div>
+        <div class="pill">MDM: Intune, Jamf</div>
+        <div class="pill">Asset & Inventory</div>
+        <div class="pill">Networking Basics</div>
+        <div class="pill">Remote Tools: Zoom, Slack</div>
+        <div class="pill">Scripting: Bash / PowerShell</div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="section-title">
+        <h2>Professional Development</h2>
+        <span class="muted">Highlights of recent growth</span>
+      </div>
+      <div class="timeline">
+        <div class="vline"></div>
+        <div class="event">
+          <div class="card">
+            <h3>Remote Service Desk Lead</h3>
+            <small class="muted">2024 — Present</small>
+            <p>Own intake, prioritization, and resolution for a distributed org. Elevated first-contact resolution and documented standard runbooks.</p>
+          </div>
+        </div>
+        <div class="vline"></div>
+        <div class="event">
+          <div class="card">
+            <h3>Endpoint Management</h3>
+            <small class="muted">2023 — 2024</small>
+            <p>Rolled out device baselines, automated patch windows, and compliance policies. Reduced incident noise with proactive health checks.</p>
+          </div>
+        </div>
+        <div class="vline"></div>
+        <div class="event">
+          <div class="card">
+            <h3>Operations Enablement</h3>
+            <small class="muted">2022 — 2023</small>
+            <p>Streamlined onboarding, SaaS access provisioning, and vault best‑practices. Built a lightweight asset register for visibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs">
+      <div class="section-title">
+        <h2>Certifications</h2>
+        <span class="muted">Representative set (placeholders)</span>
+      </div>
+      <div class="certs">
+        <div class="cert"><strong>CompTIA A+</strong><small>Core 1 & 2</small></div>
+        <div class="cert"><strong>Microsoft 365 Fundamentals</strong><small>MS-900</small></div>
+        <div class="cert"><strong>Google IT Support</strong><small>Professional Cert</small></div>
+        <div class="cert"><strong>ITIL Foundation</strong><small>v4</small></div>
+        <div class="cert"><strong>Jamf 100</strong><small>Associate</small></div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="padding:18px 16px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>
+        <h2 style="margin:0 0 6px; font-size:20px;">Open to IT and Remote Operations roles</h2>
+        <p class="muted" style="margin:0">Reach out on LinkedIn or via your preferred channel.</p>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="padding:0">
+        <span>© <span id="y"></span> Erik Vigorito</span>
+        <span style="margin-left:12px">•</span>
+        <a href="https://pplx.ai/equicktrut90737" target="_blank" rel="noopener">Powered by Perplexity</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
