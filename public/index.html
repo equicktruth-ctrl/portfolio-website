@@ -4,10 +4,29 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Erik Vigorito — Portfolio</title>
+  <meta name="description" content="Erik Vigorito's professional portfolio - Operations Leader, IT Systems Specialist with expertise in technology remote operations, logistics, and process automation." />
+  <meta name="author" content="Erik Vigorito" />
+  <meta property="og:title" content="Erik Vigorito — Portfolio" />
+  <meta property="og:description" content="Operations Leader and IT Systems Specialist portfolio showcasing professional experience, skills, and certifications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-portfolio-url.netlify.app" />
+  <meta property="og:image" content="https://your-portfolio-url.netlify.app/preview-image.png" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-portfolio-url.netlify.app" />
+  <!-- Google Analytics Global Site Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- CMS Meta Tag Example (Netlify) -->
+  <meta name="netlify" content="true" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
-    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 3rem 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .hero { background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); color: #fff; padding: 3rem 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
     .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; font-weight: 700; }
     .hero p { font-size: 1.1rem; margin-bottom: 1rem; color: #f0f0f0; }
     .hero .contact-info { font-size: 0.95rem; margin-bottom: 1rem; }
@@ -15,23 +34,43 @@
     .hero a:hover { border-color: #fff; }
     main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
     section { background: #fff; margin-bottom: 2rem; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    .section-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.5rem; }
-    .section-title h2 { font-size: 1.5rem; }
+    .section-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem; border-bottom: 2px solid #111c21; padding-bottom: 0.5rem; }
+    .section-title h2 { font-size: 1.5rem; color: #0d6efd; }
     .muted { color: #666; font-size: 0.9rem; }
-    .card { background: #fafafa; padding: 1.5rem; border-left: 4px solid #1a1a1a; margin-bottom: 1.5rem; }
+    .card { background: #fafafa; padding: 1.5rem; border-left: 4px solid #0d6efd; margin-bottom: 1.5rem; }
     .card:last-child { margin-bottom: 0; }
-    .card h3 { margin-bottom: 0.5rem; }
+    .card h3 { margin-bottom: 0.5rem; color: #0d6efd; }
     .card small { display: block; margin-bottom: 0.75rem; color: #666; }
     .card p { margin-bottom: 0.75rem; }
     .card ul { margin-left: 1.5rem; }
     .card ul li { margin-bottom: 0.25rem; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; }
-    .pill { background: #e0e0e0; padding: 0.5rem 1rem; border-radius: 20px; text-align: center; font-size: 0.9rem; }
+    .pill { background: #e0efff; padding: 0.5rem 1rem; border-radius: 20px; text-align: center; font-size: 0.9rem; color: #0d6efd; }
     .certs { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .cert { background: #e8f4f8; padding: 1rem; border-radius: 6px; text-align: center; font-weight: 500; }
-    .cert a { color: #0066cc; text-decoration: none; }
+    .cert { background: #e7f1ff; padding: 1rem; border-radius: 6px; text-align: center; font-weight: 500; color: #0d6efd; }
+    .cert a { color: #0d6efd; text-decoration: none; }
     .cert a:hover { text-decoration: underline; }
     footer { text-align: center; padding: 2rem; color: #666; }
+    .skill-category {
+      margin-bottom: 1.5rem;
+    }
+    .skill-category h3 {
+      color: #0d6efd;
+      margin-bottom: 0.6rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #6610f2;
+      padding-bottom: 0.3rem;
+    }
+    .skill-category ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      color: #222;
+      font-size: 1rem;
+    }
+    .skill-category ul li {
+      margin-bottom: 0.3rem;
+    }
   </style>
 </head>
 <body>
@@ -42,7 +81,7 @@
     <div class="contact-info">
       Email: <a href="mailto:erikjvigorito@gmail.com">erikjvigorito@gmail.com</a> | Phone: (772) 501-6879
     </div>
-    <a href="https://www.linkedin.com/in/erik-j-v" target="_blank">LinkedIn Profile</a>
+    <a href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
   </div>
   <main>
     <section id="about">
@@ -105,128 +144,87 @@
     </section>
 
     <section id="skills">
-      <style>
-  /* Insert in <head> inside existing <style> or externally */
-  :root {
-    --primary-color: #667eea; /* calming blue-purple */
-    --accent-color: #764ba2; /* complementary purple */
-    --text-color: #222;
-    --background-light: #f9faff;
-    --background-accent: #e6e8ff;
-  }
-  #skills {
-    background: var(--background-light);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(102, 126, 234, 0.3);
-    margin-bottom: 2rem;
-  }
-  .skill-category {
-    margin-bottom: 1.5rem;
-  }
-  .skill-category h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.6rem;
-    font-weight: 700;
-    font-size: 1.3rem;
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 0.3rem;
-  }
-  .skill-category ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    color: var(--text-color);
-    font-size: 1rem;
-  }
-  .skill-category ul li {
-    margin-bottom: 0.3rem;
-  }
-</style>
-
-<section id="skills">
-  <div class="section-title"><h2>Skills & Core Competencies</h2></div>
-  <div class="skill-category">
-    <h3>Leadership & Management</h3>
-    <ul>
-      <li>Team Leadership</li>
-      <li>Cross-Functional Collaboration</li>
-      <li>Multi-Unit Management</li>
-      <li>Change & Crisis Management</li>
-      <li>Project Management</li>
-      <li>Strategic Planning & Execution</li>
-      <li>Business Strategy & P&amp;L</li>
-    </ul>
-  </div>
-  <div class="skill-category">
-    <h3>Customer Experience & Sales</h3>
-    <ul>
-      <li>Customer Service Excellence</li>
-      <li>Client Retention Strategies</li>
-      <li>Sales Growth & Marketing Strategy</li>
-      <li>CRM Tools</li>
-    </ul>
-  </div>
-  <div class="skill-category">
-    <h3>Operations & Logistics</h3>
-    <ul>
-      <li>Operations Management</li>
-      <li>Logistics & Scheduling</li>
-      <li>Inventory & Merchandising</li>
-      <li>Facility & Asset Management</li>
-      <li>Performance Management</li>
-      <li>Staff Hiring, Training & Development</li>
-      <li>Forecasting & Planning</li>
-      <li>Contract Negotiation</li>
-      <li>SOP Development</li>
-      <li>Digital Transformation Initiatives</li>
-    </ul>
-  </div>
-  <div class="skill-category">
-    <h3>Technology & IT</h3>
-    <ul>
-      <li>IT Operations & SaaS Administration</li>
-      <li>Systems Implementation</li>
-      <li>Process Automation</li>
-      <li>Software & Hardware Optimization</li>
-      <li>Microsoft 365 & Google Workspace</li>
-      <li>Help Desk Support & Access Management</li>
-    </ul>
-  </div>
-  <div class="skill-category">
-    <h3>Finance & Procurement</h3>
-    <ul>
-      <li>Budgeting & Cost Control</li>
-      <li>Financial Reporting & Analysis</li>
-      <li>Vendor Management & Procurement</li>
-      <li>Inventory Management</li>
-    </ul>
-  </div>
-</section>
-
+      <div class="section-title"><h2>Skills & Core Competencies</h2></div>
+      <div class="skill-category">
+        <h3>Leadership & Management</h3>
+        <ul>
+          <li>Team Leadership</li>
+          <li>Cross-Functional Collaboration</li>
+          <li>Multi-Unit Management</li>
+          <li>Change & Crisis Management</li>
+          <li>Project Management</li>
+          <li>Strategic Planning & Execution</li>
+          <li>Business Strategy &amp; P&amp;L</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Customer Experience & Sales</h3>
+        <ul>
+          <li>Customer Service Excellence</li>
+          <li>Client Retention Strategies</li>
+          <li>Sales Growth & Marketing Strategy</li>
+          <li>CRM Tools</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Operations & Logistics</h3>
+        <ul>
+          <li>Operations Management</li>
+          <li>Logistics & Scheduling</li>
+          <li>Inventory & Merchandising</li>
+          <li>Facility & Asset Management</li>
+          <li>Performance Management</li>
+          <li>Staff Hiring, Training & Development</li>
+          <li>Forecasting & Planning</li>
+          <li>Contract Negotiation</li>
+          <li>SOP Development</li>
+          <li>Digital Transformation Initiatives</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Technology & IT</h3>
+        <ul>
+          <li>IT Operations & SaaS Administration</li>
+          <li>Systems Implementation</li>
+          <li>Process Automation</li>
+          <li>Software & Hardware Optimization</li>
+          <li>Microsoft 365 & Google Workspace</li>
+          <li>Help Desk Support & Access Management</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Finance & Procurement</h3>
+        <ul>
+          <li>Budgeting & Cost Control</li>
+          <li>Financial Reporting & Analysis</li>
+          <li>Vendor Management & Procurement</li>
+          <li>Inventory Management</li>
+        </ul>
+      </div>
     </section>
 
     <section id="certs">
       <div class="section-title"><h2>Certifications</h2></div>
       <div class="certs">
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/68d30d09573da69d8c33ba333507e99b47735392ec2ac53e53d98c783ccd333c" target="_blank">Brainstorming Tools</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/70b3bda08efb2fd256e090ca45c0f3039a8d6ea417bfdd900cb9a2f24c56f23f" target="_blank">Digital Body Language</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f26db445320f675a5d466ed9eeee43409e2f2bd16222de9c5eba97776239b004" target="_blank">Leading Virtual Meetings</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a17d4eeb6a1441a16eaca72e6e6571f9e249d3011ce427e37abdf03add7a18f5" target="_blank">Learning HubSpot CRM</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/728fc339d6fe44a81c4f9870a0f470c2f48deaaf0a71097a35f47444fb3f3a27" target="_blank">Microsoft Azure AI Fundamentals (AI-900)</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/fbba230180f471bbf124cdc38c3fee9392d40250293c9350a7a8c30ff9d79b42" target="_blank">Microsoft Collaboration: SharePoint, Teams, Groups, Yammer</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a96b2e29ca2a1c87bcae751ae07f94b13ebab61e449b8bf1739e9e194f68f0f4" target="_blank">Python Object-Oriented Programming</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b39b315e0fd2a7e9d042719edd6a8d99eb612c08c9c9bb64c0fcc1efdf3f96e8" target="_blank">TensorFlow 2.0: Working with Images</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b2c8099fc51b3e0d033e93a51191e7a3eee58a0b8d70048040bfafee5cada92c" target="_blank">Time Management: Working from Home</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/c6bf914df83dcb4f3d9cb7d0d6452a1f7c89ae7a2e11a1165bb52df30796e182" target="_blank">Agile Project Management with Jira Cloud</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/e6681ec759855ffafb5dde331da5f143344561aa4268870f19746fb0c6b5723d?trk=share_certificate" target="_blank">Excel Essential Training (Microsoft 365)</a></div>
-        <div class="cert"><a href="https://lnkd.in/gMxc2fRd" target="_blank">Hands-On Data Annotation: Applied Machine Learning</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/4fa6bba14d9dd90898422e211415c66fca83c4bf27371bb840e8bc7912a5a417" target="_blank">Python Essential Training</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f9cbd97d638204f6c19ee1ba12216d066c5359b09e5f9819ded8c1e2fc28d965?trk=share_certificate" target="_blank">Remote Work Foundations</a></div>
-        <div class="cert"><a href="https://www.credly.com/users/erik-vigorito" target="_blank">Artificial Intelligence Fundamentals (IBM, SkillsBuild)</a></div>
-        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/7868e118e4469653d9b8b9a38b54bd0e1cb38b747b816a720a17e5b2fcf49a67" target="_blank">Automate Your Workflows with Generative AI</a></div>
-        <div class="cert"><a href="https://www.credly.com/badges/1b444ca8-8c58-4780-8c7f-7dd090ab32c8/linked_in_profile" target="_blank">Big Data Foundations - Level 1 (IBM, SkillsBuild)</a></div>
-        <div class="cert"><a href="https://www.credly.com/badges/4fc6e539-8845-40e4-b7b2-8b3e53e9bd5a/linked_in_profile" target="_blank">Hadoop Foundations - Level 1 (IBM, SkillsBuild)</a></div>
-        <div class="cert"><a href="https://www.credly.com/badges/574eb7f8-f2fc-4648-a606-1d1a4d1f1747/linked_in_profile" target="_blank">Project Management Fundamentals (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/68d30d09573da69d8c33ba333507e99b47735392ec2ac53e53d98c783ccd333c" target="_blank" rel="noopener noreferrer">Brainstorming Tools</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/70b3bda08efb2fd256e090ca45c0f3039a8d6ea417bfdd900cb9a2f24c56f23f" target="_blank" rel="noopener noreferrer">Digital Body Language</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f26db445320f675a5d466ed9eeee43409e2f2bd16222de9c5eba97776239b004" target="_blank" rel="noopener noreferrer">Leading Virtual Meetings</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a17d4eeb6a1441a16eaca72e6e6571f9e249d3011ce427e37abdf03add7a18f5" target="_blank" rel="noopener noreferrer">Learning HubSpot CRM</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/728fc339d6fe44a81c4f9870a0f470c2f48deaaf0a71097a35f47444fb3f3a27" target="_blank" rel="noopener noreferrer">Microsoft Azure AI Fundamentals (AI-900)</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/fbba230180f471bbf124cdc38c3fee9392d40250293c9350a7a8c30ff9d79b42" target="_blank" rel="noopener noreferrer">Microsoft Collaboration: SharePoint, Teams, Groups, Yammer</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/a96b2e29ca2a1c87bcae751ae07f94b13ebab61e449b8bf1739e9e194f68f0f4" target="_blank" rel="noopener noreferrer">Python Object-Oriented Programming</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b39b315e0fd2a7e9d042719edd6a8d99eb612c08c9c9bb64c0fcc1efdf3f96e8" target="_blank" rel="noopener noreferrer">TensorFlow 2.0: Working with Images</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/b2c8099fc51b3e0d033e93a51191e7a3eee58a0b8d70048040bfafee5cada92c" target="_blank" rel="noopener noreferrer">Time Management: Working from Home</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/c6bf914df83dcb4f3d9cb7d0d6452a1f7c89ae7a2e11a1165bb52df30796e182" target="_blank" rel="noopener noreferrer">Agile Project Management with Jira Cloud</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/e6681ec759855ffafb5dde331da5f143344561aa4268870f19746fb0c6b5723d?trk=share_certificate" target="_blank" rel="noopener noreferrer">Excel Essential Training (Microsoft 365)</a></div>
+        <div class="cert"><a href="https://lnkd.in/gMxc2fRd" target="_blank" rel="noopener noreferrer">Hands-On Data Annotation: Applied Machine Learning</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/4fa6bba14d9dd90898422e211415c66fca83c4bf27371bb840e8bc7912a5a417" target="_blank" rel="noopener noreferrer">Python Essential Training</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/f9cbd97d638204f6c19ee1ba12216d066c5359b09e5f9819ded8c1e2fc28d965?trk=share_certificate" target="_blank" rel="noopener noreferrer">Remote Work Foundations</a></div>
+        <div class="cert"><a href="https://www.credly.com/users/erik-vigorito" target="_blank" rel="noopener noreferrer">Artificial Intelligence Fundamentals (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.linkedin.com/learning/certificates/7868e118e4469653d9b8b9a38b54bd0e1cb38b747b816a720a17e5b2fcf49a67" target="_blank" rel="noopener noreferrer">Automate Your Workflows with Generative AI</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/1b444ca8-8c58-4780-8c7f-7dd090ab32c8/linked_in_profile" target="_blank" rel="noopener noreferrer">Big Data Foundations - Level 1 (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/4fc6e539-8845-40e4-b7b2-8b3e53e9bd5a/linked_in_profile" target="_blank" rel="noopener noreferrer">Hadoop Foundations - Level 1 (IBM, SkillsBuild)</a></div>
+        <div class="cert"><a href="https://www.credly.com/badges/574eb7f8-f2fc-4648-a606-1d1a4d1f1747/linked_in_profile" target="_blank" rel="noopener noreferrer">Project Management Fundamentals (IBM, SkillsBuild)</a></div>
         <div class="cert">CompTIA A+</div>
       </div>
     </section>
@@ -251,12 +249,16 @@
       <div class="section-title"><h2>Contact</h2><span class="muted">Let's connect</span></div>
       <div class="card" style="padding:16px">
         <p>Email: <a href="mailto:erik.vigorito@gmail.com">erik.vigorito@gmail.com</a>
-        • LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" rel="noopener" target="_blank">erik-j-v</a></p>
+        • LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" rel="noopener noreferrer" target="_blank">erik-j-v</a></p>
       </div>
     </section>
     <footer>
-      Built with ❤️ • Deployed via Perplexity
-    </footer>
+  Built with ❤️ • Deployed via Perplexity<br>
+  <span>
+    Invite friends to Comet with this link:&nbsp;
+    <a href="https://pplx.ai/equicktrut90737" target="_blank" rel="noopener noreferrer">Get Pro & Earn $20</a>
+  </span>
+</footer>
   </main>
 </body>
 </html>
