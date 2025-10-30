@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How I Built My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; color: #333; padding: 2rem;}
+    .blog-container { max-width: 800px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); padding: 2rem;}
+    h1, h3 { color: #0d6efd; }
+    hr { margin: 2rem 0; }
+    a { color: #6610f2; }
+  </style>
+</head>
+<body>
+  <div class="blog-container">
+    <h1>How I Built My Portfolio</h1>
+    <small>Published: October 29, 2025</small>
+    <hr>
+    <h3>Step 1: Identify Goals and Scope</h3>
+    <p>Before starting, I clearly defined what the portfolio needed to accomplish: showcase my operational leadership and IT skills, include certifications and experience details, and allow easy contact. Identifying this focus helped me keep the build lean and purposeful.</p>
+
+    <h3>Step 2: Selecting Tools and Hosting</h3>
+    <p>I chose technology based on simplicity, scalability, and cost-effectiveness. Visual Studio Code offered powerful editing and Git integration. GitHub managed version control. Netlify enabled simple, automated deployments from GitHub with free SSL and global CDN.</p>
+
+    <h3>Step 3: File Organization and Naming</h3>
+    <p>Creating a clean folder structure was vital. I used a <code>public/assets</code> folder for images and simple root-level HTML files for structure. This prevented path errors and reduced deployment confusion. Consistent lowercase naming with hyphens was used for all files to avoid case sensitivity problems.</p>
+
+    <h3>Step 4: Building the Homepage</h3>
+    <p>The homepage contains a strong header with blurbs on my brand statement, experience, skills, and certifications. I added contact info and a downloadable resume, styled with CSS gradients and shadows for polish.</p>
+
+    <h3>Step 5: Adding Interactive Features</h3>
+    <p>Integrating a contact form with Netlify Forms was surprisingly easy—just a HTML form with <code>data-netlify="true"</code>. No backend coding required for submission handling. This makes me reachable to recruiters directly from the site.</p>
+
+    <h3>Step 6: Managing Static Blog Posts</h3>
+    <p>Blog posts are individual HTML pages placed in a <code>public/blog</code> folder. Each article has its own well-structured page linked from the homepage. This manual approach is ideal for now, giving me control and reducing complexity without a CMS.</p>
+
+    <h3>Step 7: Testing and Debugging</h3>
+    <ul>
+      <li>Multiple hard refreshes and cache clears ensured latest changes appeared.</li>
+      <li>Verifying image paths fixed frequent display issues.</li>
+      <li>Careful Git commits and pushes avoided deployment errors.</li>
+      <li>Netlify deploy logs were reviewed for build status and errors.</li>
+    </ul>
+
+    <h3>Step 8: Future Improvements</h3>
+    <ul>
+      <li>Adding multilingual support.</li>
+      <li>Migrating to a static site generator like Jekyll or Hugo for easier blogging.</li>
+      <li>Integrating analytics and SEO enhancements.</li>
+      <li>Expanding interactivity with JavaScript features.</li>
+    </ul>
+
+    <hr>
+    <a href="../index.html">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>

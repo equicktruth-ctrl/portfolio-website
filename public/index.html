@@ -6,18 +6,52 @@
   <title>Erik Vigorito — Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    /* Include your custom styles here */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f5f5f5;
       color: #333;
     }
     header {
-      padding: 2rem 0;
+      padding: 2rem 0 1.5rem 0;
       text-align: center;
-      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+      background: linear-gradient(135deg, #0d6efd 0%, #6610f2 60%, #28a745 100%);
       color: white;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
+    }
+    nav {
+      margin-bottom: 1.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      transition: background 0.2s;
+      border-radius: 7px;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.15);
+      color: #ffe0b2;
+    }
+    .profile-img {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin: 1rem auto 1.5rem;
+      display: block;
+      box-shadow: 0 0 12px rgba(13, 110, 253, 0.18);
+    }
+    .scenery-img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 2rem auto 1.25rem auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
     }
     section {
       margin-bottom: 3rem;
@@ -32,33 +66,96 @@
       padding-bottom: 0.3rem;
       max-width: fit-content;
     }
+    .about-img {
+      width: 100px;
+      border-radius: 10px;
+      margin: 0.75rem 0 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      display: block;
+    }
+    .btn-custom {
+      display: inline-block;
+      margin: 0.5rem 0.75rem 1rem 0;
+      padding: 0.5rem 1.2rem;
+      font-size: 1.1rem;
+      border-radius: 7px;
+      background: #6610f2;
+      color: #fff;
+      border: none;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .btn-custom:hover {
+      background: #0d6efd;
+      color: #fff;
+      text-decoration: none;
+    }
     footer {
       padding: 2rem 0;
       text-align: center;
       color: #666;
+      background: #f8f9fa;
+      margin-top: 3rem;
+      border-top: 1px solid #e3e3e3;
+      font-size: 1rem;
+    }
+    footer a {
+      color: #6610f2;
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: #0d6efd;
     }
   </style>
 </head>
 <body>
   <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="#education">Education</a>
+    </nav>
+    <!-- HERO PROFILE PHOTO -->
+    <img src="assets/profile.jpg" alt="Erik Vigorito full length" class="profile-img" />
     <h1>Erik Vigorito</h1>
     <p>Operations Leader | IT Systems Specialist | Technology Remote Operations</p>
     <p>Email: <a href="mailto:erikjvigorito@gmail.com" style="color:white;">erikjvigorito@gmail.com</a> | Phone: (772) 501-6879</p>
     <p><a href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener noreferrer" style="color:white;">LinkedIn Profile</a></p>
+    <!-- Action Buttons -->
+    <a href="resume.pdf" download class="btn-custom">Download Resume</a>
+    <a href="mailto:erikjvigorito@gmail.com" class="btn-custom">Contact Me</a>
+    <a href="?lang=es" class="btn-custom">Español</a>
+    <a href="?lang=en" class="btn-custom">English</a>
   </header>
-
   <main class="container">
-
     <section id="about">
       <div class="section-title">About Me</div>
-      <p>I bring hands-on operational leadership from fast-paced retail and food-service environments, combined with a growing technical skillset in IT administration, SaaS platforms, and process automation. I thrive on solving problems, building efficient systems, and empowering teams to deliver exceptional results.</p>
+      <!-- ABOUT CLOSE-UP PHOTO -->
+      <img src="assets/about-profile.jpg" alt="Erik Vigorito close up" class="about-img" />
+      <p>
+        I bring hands-on operational leadership from fast-paced retail and logistic environments, combined with a growing technical skillset in IT administration, SaaS platforms, and process automation. I thrive on solving problems, building efficient systems, and empowering teams to deliver exceptional results.
+      </p>
+      <!-- Beach scenic image, good visual break -->
+      <img src="assets/joel-de-vriend-PbyJbTJH9yY-unsplash.jpg" alt="Florida Beach Scenic" class="scenery-img" />
     </section>
-
+    <section id="blog">
+  <div class="section-title">Blog</div>
+  <article>
+    <h3>How I Built My Portfolio</h3>
+    <small>October 29, 2025</small>
+    <p>This post explains each step I took to build my personal website including key troubleshooting tips…</p>
+    <a href="blog/post1.html">Read more</a>
+  </article>
+</section>
     <section id="brand-statement">
       <div class="section-title">Personal Brand Statement</div>
-      <p>A strategic leader blending traditional management experience with modern AI and digital skills to lead and innovate in onsite, remote, and hybrid environments. Dedicated to fostering growth, engagement, and sustainable success.</p>
+      <p>
+        A strategic leader blending traditional management experience with modern AI and digital skills to lead and innovate in onsite, remote, and hybrid environments. Dedicated to fostering growth, engagement, and sustainable success.
+      </p>
     </section>
-
     <section id="experience">
       <div class="section-title">Professional Experience</div>
       <ul>
@@ -96,8 +193,34 @@
           </ul>
         </li>
       </ul>
+      <!-- Add bridge/road scenic image after experience list -->
+      <img src="assets/julius-hildebrandt-KD6x5YFIxyo-unsplash.jpg" alt="Florida Bridge Scenic" class="scenery-img" />
     </section>
+    <section id="contact">
+  <div class="section-title">Contact</div>
+  <p>Email: <a href="mailto:erikjvigorito@gmail.com">erikjvigorito@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/erik-j-v" target="_blank" rel="noopener noreferrer">Visit Profile</a></p>
+  <a href="resume.pdf" download class="btn-custom">Download Resume</a>
 
+  <!-- Add Contact Form here -->
+  <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name<br>
+      <input type="text" name="name" required></label>
+    </p>
+    <p>
+      <label>Your Email<br>
+      <input type="email" name="email" required></label>
+    </p>
+    <p>
+      <label>Your Message<br>
+      <textarea name="message" required></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send Message</button>
+    </p>
+  </form>
+</section>
     <section id="skills">
       <div class="section-title">Skills & Core Competencies</div>
       <ul>
@@ -115,7 +238,6 @@
         <li>Access Management</li>
       </ul>
     </section>
-
     <section id="certifications">
       <div class="section-title">Certifications</div>
       <ul>
@@ -141,7 +263,6 @@
         <li>CompTIA A+</li>
       </ul>
     </section>
-
     <section id="education">
       <div class="section-title">Education</div>
       <h3>Bachelor of Science (BS), Information Technology Management & Cybersecurity</h3>
@@ -149,11 +270,11 @@
       <p>Graduated <b>cum laude</b> (GPA: 3.7)</p>
       <p>Relevant Coursework: Network Security & Cryptography, Systems Analysis & Design, Database Design & Administration, Computer Forensics, Data Mining & Warehousing, Management & Leadership</p>
     </section>
-
-    <footer>
-      Built with ❤️ • Deployed via Perplexity<br>
-      Invite friends to Comet with this link: <a href="https://pplx.ai/equicktrut90737" target="_blank" rel="noopener noreferrer">Get Pro & Earn $20</a>
-    </footer>
   </main>
+  <footer>
+    Built with ❤️ • Deployed via Perplexity<br>
+    Invite friends to Comet with this link: 
+    <a href="https://pplx.ai/equicktrut90737" target="_blank" rel="noopener noreferrer">Get Pro & Earn $20</a>
+  </footer>
 </body>
 </html>
