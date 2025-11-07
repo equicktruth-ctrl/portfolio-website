@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "This portfolio highlights my journey from restaurant management into IT, remote work, and data annotation. It’s designed as a single-page site with added sections for contact, certifications, and technical content, then expandable with a blog for tutorials and professional updates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/equicktruth-ctrl/portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/equicktruth-ctrl/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/equicktruth-ctrl/portfolio-website#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
