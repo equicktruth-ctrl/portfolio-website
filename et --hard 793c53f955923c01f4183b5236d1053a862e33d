@@ -1,0 +1,233 @@
+[33mcommit 255e3508ef45bca800cc27089e8f135cd7c96df9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Fri Nov 7 18:17:22 2025 -0500
+
+    removal of the .env file.
+
+[33mcommit 687217b8c98bee35e6149a4fb4b94a1880bfb9e6[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Fri Nov 7 17:45:27 2025 -0500
+
+    Portfolio changes
+
+[33mcommit 7933c53f955923c01f4183b5236d1053a862e33d[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Fri Nov 7 17:31:03 2025 -0500
+
+    Use .env for API key, update .gitignore
+
+[33mcommit b0f9f2fb28799c7a8d1aa0fcb2e4faa7d0f626fe[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Fri Nov 7 17:08:56 2025 -0500
+
+    Portfolio Changes
+
+[33mcommit ea91010c9e1e563156043c9c8ea20d2dae0516d8[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Fri Nov 7 17:06:10 2025 -0500
+
+    portfolio changes
+
+[33mcommit d8652ab5c1108e6776b8c4482a646d964e238ec8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Nov 6 17:22:52 2025 -0500
+
+    adjusted PDF extention
+
+[33mcommit 83f936b14e4c0f4a58146ccb10d1982ce3001940[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Oct 30 11:25:38 2025 -0400
+
+    Tidio
+
+[33mcommit 4bad5ec66796ab6b3442f99bdafbcae556f7d485[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Oct 30 02:56:40 2025 -0400
+
+    contact form again
+
+[33mcommit 62975a2b00027b5d14b43ae9d94ff2ff3ccbcf21[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Oct 30 02:44:37 2025 -0400
+
+    contact form
+
+[33mcommit f7bd89d14a46a321de9919f0cf4d46e881eb17cf[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Oct 30 02:34:38 2025 -0400
+
+    resume pdf
+
+[33mcommit 5194de4a221906c868e0088921d10c39c63ab607[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Thu Oct 30 00:19:05 2025 -0400
+
+    README file
+
+[33mcommit 2b5559443a7d35e4d919709e70112d55cd92a644[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Wed Oct 29 23:47:07 2025 -0400
+
+    Add blog structure and post1
+
+[33mcommit 6dc6c2ceb487d6ec421818e9b871881c83044930[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 19:52:51 2025 -0400
+
+    Refactor index.html for improved layout and styling
+    
+    Updated the HTML structure and content for better organization and styling. Added Bootstrap for responsive design and improved sections for certifications, education, and contact information.
+
+[33mcommit a18777a66b7f18f17a72959aeaa32189b1e54bd2[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 18:25:24 2025 -0400
+
+    Remove Resume
+
+[33mcommit 9cda31f8c652155537b0860bc490ba3e38c1d69d[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 18:18:06 2025 -0400
+
+    Remove Resume
+
+[33mcommit 87cabea53f02a7a625af6014fcd16a8e8fa78e43[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 18:10:11 2025 -0400
+
+    Delete public/Certifications with link
+
+[33mcommit 85b9f80784bf22a440c55899dcff96114e3297d4[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 18:01:43 2025 -0400
+
+    Remove outdated certifications and links
+
+[33mcommit c85e8252c64f5c4a801abf7b6678a016fee17f48[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 16:20:09 2025 -0400
+
+    Refactor footer section in index.html
+
+[33mcommit 53bb6372a972d55676022bc6c6cf15763fab98c8[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 16:12:47 2025 -0400
+
+    Enhance SEO, styles, and skills sections in index.html
+    
+    Added meta tags for SEO and social sharing, updated styles for better visual consistency, and modified links for security. Enhanced the skills and certifications sections for clarity.
+
+[33mcommit 184c891324be670c5b5a7da554f6464ff755d8da[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 15:41:21 2025 -0400
+
+    Refactor skills section and add styles
+
+[33mcommit a53dc515199820abf8251215d0452cc6d3a34e75[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 15:13:43 2025 -0400
+
+    Add personal brand statement section to index.html
+    
+    Added a personal brand statement section with a description.
+
+[33mcommit b8afb0171c55fb67833ea34aa002df797214884b[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 14:59:48 2025 -0400
+
+    Refactor index.html to enhance layout and content
+    
+    Removed header section and updated contact information with a mailto link. Added professional experience details and improved skills section formatting.
+
+[33mcommit 968b5075c40c8460c0855c2a469bd2e848e84145[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 14:52:51 2025 -0400
+
+    Enhance education section with academic details
+    
+    Updated education section to include detailed academic credentials and relevant coursework.
+
+[33mcommit cd2a41c105b04790a7a29761a0f443a20a0f6f43[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 10:51:08 2025 -0400
+
+    Revise professional experience and contact information
+    
+    Updated professional details including job titles, emails, and responsibilities in the experience section.
+
+[33mcommit 7087188ca7a20d2298ba2266269610e0e3189d7b[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Tue Oct 28 10:32:32 2025 -0400
+
+    Fix HTML head tag opening
+
+[33mcommit a3dae7073d9b359cc46d6b4c0a9bdbda2af6485d[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 16:55:24 2025 -0400
+
+    Restore portfolio content and add hero section as top banner.
+    
+    Updated HTML structure and styles for the portfolio page, including a new hero section and improved layout.
+
+[33mcommit 1dcb57697f4a3cfc0f14605c354a74f07ecbfe39[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 16:47:26 2025 -0400
+
+    Insert hero intro at top of page.
+    
+    Updated the index.html file to enhance the structure and content of the portfolio page, including adding a timeline for professional experience and improving styling.
+
+[33mcommit 3e04d38be010471a2f2c43e380ebbd4b62c50d03[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 16:27:36 2025 -0400
+
+    Update certifications section with new links
+
+[33mcommit 8e48fc3c313c9450482698969f3941e996f26123[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 16:21:41 2025 -0400
+
+    Replace certifications section with credential links.
+
+[33mcommit 89f21175020eecd5e6ee1f434c1f64c9630222e4[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 16:12:03 2025 -0400
+
+    Add certifications with links to public directory
+
+[33mcommit 8e37fc37920b9561beace187b981c8e074bc2e0d[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 15:17:23 2025 -0400
+
+    Resume-based update: hero, experience, skills, certifications.
+    
+    Updated the title and description meta tags for improved SEO and clarity. Adjusted various sections to better reflect the user's skills and experience, including renaming sections and modifying content for better alignment with the user's professional branding.
+
+[33mcommit d3449506317322051b28f927be54538237772a6e[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 14:59:17 2025 -0400
+
+    Add resume for Erik Vigorito
+
+[33mcommit 274ace7d7d842ba20a0931cca486b1db70940c5b[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 11:44:33 2025 -0400
+
+    Modern portfolio landing page for Erik Vigorito
+
+[33mcommit dda7758faafccc6acc694d7cd7140fc18e618868[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 11:29:47 2025 -0400
+
+    Initial folder setup for Netlify portfolio
+
+[33mcommit 30fd92e2f4f283616d3930d180fd681515cfbd3e[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 11:28:39 2025 -0400
+
+    Initial folder setup for Netlify portfolio
+
+[33mcommit 71e907195c71c4291442676e35d6e9411b9f409f[m
+Author: equicktruth-ctrl <equicktruth@gmail.com>
+Date:   Mon Oct 27 11:27:43 2025 -0400
+
+    Initial folder setup for Netlify por

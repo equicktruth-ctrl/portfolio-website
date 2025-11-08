@@ -3,10 +3,15 @@ const express = require('express');
 const app = express();
 const PORT = 5050;
 
-const API_KEY = '[REDACTED]';
+require('dotenv').config();
+const API_KEY = process.env.PPLX_API_KEY;
+
+// Debug: Print key at startup; remove or comment out when live!
+console.log('Loaded API KEY:', API_KEY);
 
 app.use(express.json());
 
+// Open CORS for all origins (safe for local/test)
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -39,10 +44,10 @@ app.post('/qna', async (req, res) => {
     }
 
     const data = await perplexityResponse.json();
-const answer = data.answer ||
-               (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) ||
-               'No answer received.';
-res.json({ answer });
+    const answer = data.answer ||
+      (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) ||
+      'No answer received.';
+    res.json({ answer });
 
   } catch (err) {
     console.error("Catch Error: ", err);
